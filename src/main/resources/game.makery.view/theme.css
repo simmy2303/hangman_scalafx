@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');/** {*/
+
+.header {
+    -fx-font-family: "Pixelify Sans";
+    -fx-font-weight: bold;
+    -fx-font-size: 50px; /* Added units for font size */
+    -fx-alignment: center;
+    -fx-text-fill: #ffffff; /* White text for better contrast */
+    -fx-text-shadow: 2px 4px 4px rgba(255, 255, 255, 0.5); /* Text shadow for readability */
+}
+*{
+    -fx-font-family: "Poppins";
+    -fx-alignment: center;
+
+}
+.normal {
+    -fx-font-family: "Poppins";
+    -fx-font-weight: bold;
+
+}
+.themeLabel {
+    -fx-background-color: purple; /* Purple background */
+    -fx-padding: 10px; /* Padding around the text */
+    -fx-border-color: black; /* Black outline */
+    -fx-border-width: 2px; /* Border width */
+    -fx-text-fill: white; /* Text color */
+    -fx-border-radius: 5px; /* Optional: rounded corners */
+    -fx-font-weight: bold; /* Bold text */
+}
+
+
+
+/* Background styling */
+.background {
+    -fx-background-color: #73d173;
+    -fx-background-image: url('game.makery.images/welcome.gif');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center; /* Center the background image */
+    -fx-background-size: cover; /* Cover the entire area */
+}
+
+.gameBg{
+    -fx-background-image: url('game.makery.images/canvasBg.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center; /* Center the background image */
+    -fx-background-size: cover;
+}
+.difficulty{
+    -fx-font-family: "Pixelify Sans"
+}
+.difficultyText{
+    -fx-font-family: "Pixelify Sans";
+    -fx-font-weight: bold;
+    -fx-font-size: 30px; /* Added units for font size */
+    -fx-alignment: center;
+    -fx-text-fill: #FFFFFF; /* White text for better contrast */
+    -fx-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+}
+
+.diffButtons{
+    -fx-background-color: #ffffff; /* Gold color for the button */
+    -fx-text-fill: #705291; /* Black text color */
+    -fx-font-size: 20px; /* Adjusted font size */
+    -fx-border-radius: 15px; /* Rounded corners */
+    -fx-background-radius: 10px;
+    -fx-padding: 2px 2px; /* Padding for better button size */
+    -fx-cursor: hand; /* Pointer cursor on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 5, 0.5, 0, 0); /* Drop shadow for a 3D effect */
+    -fx-transition: background-color 0.3s ease;
+}
+.diffButtons:hover{
+    -fx-background-color: #984ae1; /* Orange color on hover */
+    -fx-text-fill: #FFFFFF; /* White text on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.5, 0, 0); /* Stronger drop shadow on hover */
+}
+.highScores{
+    -fx-background-color: #984ae1; /* Gold color for the button */
+    -fx-text-fill: #ffffff; /* Black text color */
+    -fx-font-size: 15px; /* Adjusted font size */
+    -fx-border-radius: 15px; /* Rounded corners */
+    -fx-background-radius: 10px;
+    -fx-padding: 2px 2px; /* Padding for better button size */
+    -fx-cursor: hand; /* Pointer cursor on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 5, 0.5, 0, 0); /* Drop shadow for a 3D effect */
+    -fx-transition: background-color 0.3s ease;
+}
+.highScores:hover{
+    -fx-background-color: #FFFFFF; /* Orange color on hover */
+    -fx-text-fill: #984ae1; /* White text on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.5, 0, 0); /* Stronger drop shadow on hover */
+}
+.exitButton {
+    -fx-background-image: url('game.makery.images/exit.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+    -fx-background-size: 50px 50px; /* Adjust size as needed */
+    -fx-min-width: 50px;
+    -fx-min-height: 50px;
+    -fx-background-color: transparent; /* Ensure the button background is transparent */
+    -fx-border: none; /* Remove button border */
+
+}
+.exitButton:pressed {
+    -fx-background-size: 45px 45px;
+
+}
+.score{
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-alignment: center;
+    -fx-text-fill: #6b1287;
+    -fx-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+/* Play button styling */
+.buttonPlay {
+    -fx-background-color: #fffef8; /* Gold color for the button */
+    -fx-text-fill: #000000; /* Black text color */
+    -fx-font-size: 20px; /* Adjusted font size */
+    /*-fx-font-weight: bold;*/
+    -fx-border-radius: 10px; /* Rounded corners */
+    -fx-background-radius: 10px;
+    -fx-padding: 10px 20px; /* Padding for better button size */
+    -fx-cursor: hand; /* Pointer cursor on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 5, 0.5, 0, 0); /* Drop shadow for a 3D effect */
+    -fx-transition: background-color 0.3s ease;
+
+}
+.buttonPlay2 {
+    -fx-background-color: #fffef8; /* Gold color for the button */
+    -fx-text-fill: #000000; /* Black text color */
+    -fx-font-size: 12px; /* Adjusted font size */
+    /*-fx-font-weight: bold;*/
+    -fx-border-radius: 10px; /* Rounded corners */
+    -fx-background-radius: 10px;
+    -fx-padding: 10px 20px; /* Padding for better button size */
+    -fx-cursor: hand; /* Pointer cursor on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 5, 0.5, 0, 0); /* Drop shadow for a 3D effect */
+    -fx-transition: background-color 0.3s ease;
+}
+.buttonTut{
+    -fx-background-color: #fffef8; /* Gold color for the button */
+    -fx-text-fill: #000000; /* Black text color */
+    -fx-font-size: 20px; /* Adjusted font size */
+    -fx-border-radius: 10px; /* Rounded corners */
+    -fx-background-radius: 10px;
+    -fx-padding: 10px 20px; /* Padding for better button size */
+    -fx-cursor: hand; /* Pointer cursor on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 5, 0.5, 0, 0); /* Drop shadow for a 3D effect */
+    -fx-transition: background-color 0.3s ease;
+}
+.buttonPlay:hover, .buttonTut:hover, .buttonPlay2:hover {
+    -fx-background-color: #d853cb; /* Orange color on hover */
+    -fx-text-fill: #FFFFFF; /* White text on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.5, 0, 0); /* Stronger drop shadow on hover */
+
+
+}
+.backButton {
+    -fx-background-image: url('game.makery.images/back.png');
+    -fx-background-size: cover; /* Adjust as needed */
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent; /* Remove background color */
+    -fx-background-radius: 20px;
+    -fx-background-position: center center; /* Center the image */
+    -fx-min-width: 50px; /* Adjust button size as needed */
+    -fx-min-height: 50px;
+}
+
+
+.backButton:pressed{
+    -fx-background-size: 45px 45px;
+    -fx-cursor: pointer;
+}
+.message{
+    -fx-font-size: 20px; /* Added units for font size */
+    -fx-alignment: center;
+    -fx-justify: center;
+    -fx-text-fill: #000000; /* White text for better contrast */
+    -fx-text-shadow: 2px 2px 2px rgba(228, 228, 228, 0.5);
+    fx-alignment: center;        /* Center-aligns the text within the label */
+    -fx-text-alignment: center;   /* Ensures text is centered */
+    -fx-min-width: 200px;         /* Sets a minimum width to prevent shrinking */
+    -fx-max-width: 400px;         /* Sets a maximum width to control expansion */
+    -fx-wrap-text: true;
+}
+.redo{
+    -fx-background-image: url('game.makery.images/redo.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+    -fx-background-size: 75px 75px; /* Adjust size as needed */
+    -fx-min-width: 70px;
+    -fx-min-height: 70px;
+    -fx-background-color: transparent; /* Ensure the button background is transparent */
+    -fx-border: none;}
+.mute {
+    -fx-background-image: url('game.makery.images/muteButton.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+    -fx-background-size: 45px 45px; /* Default size */
+    -fx-min-width: 70px;
+    -fx-min-height: 70px;
+    -fx-background-color: transparent; /* Ensure the button background is transparent */
+    -fx-border: none;
+}
+.difficultyText{
+
+}
+.mute:pressed {
+    -fx-background-size: 40px 40px; /* Increase size when pressed */
+}
+
+
+
+.redo:pressed{
+    -fx-background-size: 70px 70px;
+
+}
+.dotdotdot{
+    -fx-font-size: 20px; /* Added units for font size */
+    -fx-font-weight: bold;
+    fx-alignment: center;        /* Center-aligns the text within the label */
+    -fx-text-alignment: center;   /* Ensures text is centered */
+    -fx-min-width: 200px;         /* Sets a minimum width to prevent shrinking */
+    -fx-max-width: 400px;         /* Sets a maximum width to control expansion */
+    -fx-wrap-text: true;
+
+
+}
+.hintButton{
+    -fx-background-image: url('game.makery.images/lightbulb.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+    -fx-background-size: 50px 50px; /* Adjust size as needed */
+    -fx-min-width: 70px;
+    -fx-min-height: 70px;
+    -fx-background-color: transparent; /* Ensure the button background is transparent */
+    -fx-border: none;
+
+}
+.hintButton:pressed{
+    -fx-background-size: 46px 46px; /* Adjust size as needed */
+    -fx-cursor: pointer;
+
+}
+.guessButton {
+    -fx-border-radius: 40px;        /* Keeps the rounded corners */
+    -fx-background-radius: 40px;    /* Matches the border radius to ensure no color spill */
+    -fx-border-color: #888888;      /* Gray border color */
+    -fx-border-width:1px;          /* Set a specific border width */
+    -fx-background-color: white;
+
+}
+.guessButton:hover{
+    -fx-background-color: #a61c8f;
+    -fx-text-fill: white;
+    -fx-cursor: pointer;
+
+}
+.timeLabel{
+    -fx-font-family: "Poppins";
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-text-fill: black;
+}
+.tutword{
+    -fx-font-size: 10px;
+}
+.hangmanDrawing{
+    -fx-font-family: "Poppins";
+
+    -fx-font-size: 16px; /* Added units for font size */
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+    -fx-text-fill: #000000; /* White text for better contrast */
+    -fx-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    fx-alignment: center;        /* Center-aligns the text within the label */
+    -fx-min-width: 100px;         /* Sets a minimum width to prevent shrinking */
+    -fx-max-width: 700px;         /* Sets a maximum width to control expansion */
+    -fx-wrap-text: true;
+    -fx-border-color: transparent;
+}
+.hangmanDrawing .scroll-pane
+{
+    -fx-hbar-policy : never;
+    -fx-vbar-policy : never;
+}
+.hangmanDrawing .content {
+    -fx-alignment: center;
+}
+.tooltip {
+    -fx-background-color: #332c3c;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-padding: 4px;
+}
+
+.nextPg{
+    -fx-background-image: url('game.makery.images/nextPage.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent; /* Remove background color */
+    -fx-background-radius: 20px;
+    -fx-background-position: center center; /* Center the image */
+    -fx-min-width: 50px; /* Adjust button size as needed */
+    -fx-min-height: 50px;
+    -fx-background-size: 50px 50px;
+}
+
+.prevPg{
+    -fx-background-image: url('game.makery.images/prevPage.png');
+
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent; /* Remove background color */
+    -fx-background-radius: 20px;
+    -fx-background-position: center center; /* Center the image */
+    -fx-min-width: 50px; /* Adjust button size as needed */
+    -fx-min-height: 50px;
+    -fx-background-size: 50px 50px;
+}
+.nextPg:pressed .prevPg:pressed{
+    -fx-min-width: 44px; /* Adjust button size as needed */
+    -fx-min-height:44px;
+}
+/* Apply to all alerts */
+.alert {
+    -fx-font-family: "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 16px;
+    -fx-background-color: #f3e5f5; /* Light lavender-pink background */
+    -fx-border-color: #ba68c8; /* Purple-pink border */
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-max-width: 400px; /* Maximum width less than canvas size */
+}
+
+/* Header of the alert */
+.alert .header-panel {
+    -fx-background-color: #ce93d8; /* Soft purple-pink header background */
+    -fx-text-fill: white; /* White text color */
+    -fx-padding: 10px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10px 10px 0 0;
+}
+
+/* Content area of the alert */
+.alert .content {
+    -fx-text-fill: #ab47bc; /* Deep purple-pink text */
+    -fx-padding: 15px;
+}
+
+/* Button bar at the bottom */
+.alert .button-bar {
+    -fx-background-color: #f3e5f5; /* Matching the background of the alert */
+    -fx-padding: 10px;
+    -fx-border-radius: 0 0 10px 10px;
+}
+
+/* Buttons within the alert */
+.alert .button-bar .button {
+    -fx-background-color: #ba68c8; /* Purple-pink button */
+    -fx-text-fill: white; /* White text on button */
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 15px;
+    -fx-cursor: hand;
+}
+
+.alert .button-bar .button:hover {
+    -fx-background-color: #ab47bc; /* Darker purple-pink on hover */
+}
+
+.gameCanvas{
+    -fx-background-image: url('game.makery.images/gameBg.gif');
+    -fx-background-size: cover; /* Adjust as needed */
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+}

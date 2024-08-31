@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" maxHeight="400.0" maxWidth="600.0"  styleClass="background" stylesheets="@theme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.makery.controller.WelcomeController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff72" height="400.0" stroke="WHITE" strokeType="INSIDE" width="606.0" />
+        <Text layoutX="105.0" layoutY="199.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="header" text="HangMan Game" wrappingWidth="390.6000061035156">
+         <effect>
+            <DropShadow color="WHITE" height="0.0" radius="30.6325" width="124.53" />
+         </effect></Text>
+        <Button alignment="CENTER" defaultButton="true" layoutX="174.0" layoutY="223.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#getPlay" prefHeight="50.0" prefWidth="112.0" styleClass="buttonPlay" stylesheets="@theme.css" text="Play" textAlignment="CENTER" />
+        <Button layoutX="293.0" layoutY="223.0" mnemonicParsing="false" onAction="#getTutorial" prefHeight="50.0" prefWidth="125.0" styleClass="buttonTut" stylesheets="@theme.css" text="Tutorial" />
+        <Button layoutX="536.0" layoutY="336.0" mnemonicParsing="false" onAction="#handleExit" styleClass="exitButton" stylesheets="@theme.css" text=" " />
+      <Button fx:id="muteButton" layoutX="536.0" mnemonicParsing="false" onAction="#handleMuteButton" styleClass="mute" text=" " />
+    </children>
+    <effect>
+        <Glow />
+    </effect>
+</AnchorPane>

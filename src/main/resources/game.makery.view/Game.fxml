@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="gamePane" maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" styleClass="gameCanvas" stylesheets="@theme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.makery.controller.GameController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#af10c7b8" height="28.0" layoutX="39.0" layoutY="152.0" stroke="BLACK" strokeType="INSIDE" width="138.0">
+         <effect>
+            <Glow />
+         </effect></Rectangle>
+        <Button layoutX="542.0" layoutY="341.0" mnemonicParsing="false" onAction="#handleExit" styleClass="exitButton" stylesheets="@theme.css" text=" " />
+        <Button fx:id="backButton" cancelButton="true" layoutX="14.0" layoutY="14.0" minHeight="37.0" minWidth="34.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="50.0" prefWidth="50.0" styleClass="backButton" stylesheets="@theme.css" />
+        <TextField fx:id="guessTextField" layoutX="196.0" layoutY="277.0" prefHeight="36.0" prefWidth="138.0" promptText="Enter a Letter" />
+        <Button fx:id="guessButton" defaultButton="true" layoutX="343.0" layoutY="277.0" mnemonicParsing="false" onAction="#handleGuess" prefHeight="36.0" prefWidth="62.0" styleClass="guessButton" text="Guess" />
+        <Text fx:id="attemptsLabel" fontSmoothingType="LCD" layoutX="243.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="normal" text=" " />
+        <Label fx:id="messageLabel" layoutX="84.0" layoutY="352.0" prefHeight="28.0" prefWidth="449.0" styleClass="messageLabel" text=" " textAlignment="CENTER" />
+        <Label fx:id="wordLabel" layoutX="196.0" layoutY="313.0" prefHeight="23.0" prefWidth="225.0" styleClass="dotdotdot" text=" " />
+      <TextArea fx:id="hangmanDrawing" editable="false" layoutX="196.0" layoutY="67.0" prefHeight="198.0" prefWidth="209.0" styleClass="hangmanDrawing" wrapText="true" />
+      <Button fx:id="redo" layoutX="532.0" layoutY="-4.0" minWidth="37.0" mnemonicParsing="false" onAction="#handleRedo" prefHeight="50.0" prefWidth="37.0" styleClass="redo" text=" " />
+
+        <Label fx:id="timerLabel" layoutX="240.0" layoutY="14.0" styleClass="timeLabel" text=" " />
+        <Button fx:id="hintButton" layoutX="435.0" layoutY="130.0" minHeight="59.0" minWidth="54.0" mnemonicParsing="false" onAction="#handleHint" prefHeight="70.0" prefWidth="79.0" styleClass="hintButton" text=" " />
+      <Text fx:id="hintLabel" layoutX="453.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " />
+      <Button fx:id="muteButton" layoutX="474.0" layoutY="-3.0" mnemonicParsing="false" onAction="#handleMuteButton" styleClass="mute" text=" " />
+      <Label fx:id="scoreLabel" layoutX="301.0" layoutY="41.0" styleClass="score" text=" ">
+         <effect>
+            <Glow />
+         </effect></Label>
+      <Text fx:id="themeLabel" fill="WHITE" fontSmoothingType="LCD" layoutX="49.0" layoutY="169.0" stroke="#f2f2f2" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="themeLabel" text=" " wrappingWidth="127.05200004577637" />
+      <Text fx:id="difficultyText" styleClass="difficulty" layoutX="7.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="50.00000077486038" />
+    </children>
+</AnchorPane>
